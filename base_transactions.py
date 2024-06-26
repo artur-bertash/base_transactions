@@ -3,10 +3,10 @@ from web3.middleware import geth_poa_middleware
 from eth_account.signers.local import LocalAccount
 from typing import Optional, Dict, Union
 import configseed
-
+ab = 'ya ebal v rot'
 # не переживаем, что адрес одинаковый
-my_address = configseed.address  # checksum
-someone_address = '0x4724Eece87A5cc596f0E63FF603e97b92Cb1e31e'  # checksum
+  # checksum
+  # checksum
 
 # Create an instance of Web3
 w3 = Web3(Web3.HTTPProvider('https://base.llamarpc.com'))
@@ -17,10 +17,7 @@ w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 # Enable unaudited HD wallet features
 w3.eth.account.enable_unaudited_hdwallet_features()
 
-MNEMONIC = configseed.seed
-
-account = w3.eth.account.from_mnemonic(MNEMONIC)
-private_key = account._private_key  # hex адрес
+# hex адрес
 
 
 def build_txn(
@@ -48,17 +45,20 @@ def build_txn(
         'gas': gas,
     }
     return txn
+def send_sign_transaction(my_address, someone_address, amount_of_eth, memo): 
+    account = w3.eth.account.from_mnemonic(memo)
+    
+    private_key = account._private_key  
+    transaction = build_txn(
+        web3=w3,
+        from_address=my_address,
+        to_address=someone_address,
+        amount=amount_of_eth,
+    )
 
-transaction = build_txn(
-    web3=w3,
-    from_address=my_address,
-    to_address=someone_address,
-    amount=0.0001,
-)
 
+    signed_txn = w3.eth.account.sign_transaction(transaction, private_key)
 
-signed_txn = w3.eth.account.sign_transaction(transaction, private_key)
+    txn_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
 
-txn_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
-
-#print(txn_hash.hex()) 
+    return(txn_hash.hex()) 

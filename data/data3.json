@@ -1,0 +1,27 @@
+{
+    "Wallet_1": {
+        "mnemonic": "sting permit actor road material donkey fit select dice raven pizza pride",
+        "address": "0x44d5ee590E3C697873C01E5dcE4365bb71104B41",
+        "private_key": "0x80b164fab4affad86a7c6a138128371faa838142353f3366539599d1255f6776"
+    },
+    "Wallet_2": {
+        "mnemonic": "drill grass custom radio caught ship impulse million buffalo diesel wall hour",
+        "address": "0x4031D2183659A14f31C31b57b06B0eE48B17989d",
+        "private_key": "0xe29c90c6b683ec6f37c8ef91919c170d79c00ff231cc262f4b487244f681d479"
+    },
+    "Wallet_3": {
+        "mnemonic": "maid curtain put village daughter message glue abuse cabbage hood drink slim",
+        "address": "0x8dB24534DE8fef06BbD05211B88d4d9cdA61fDeb",
+        "private_key": "0x51e2c477f56c33bfd60ef58e1d823f924ef2096ae4b93374058b1dacb737fb08"
+    },
+    "Wallet_4": {
+        "mnemonic": "draft fiction review once fall coast eternal exile ivory later brush engage",
+        "address": "0xEEd4505e77e9C2e96d43B647D970eb387c82a72f",
+        "private_key": "0xce183066150584cb538bd63bc585635c480b59191e52951b233fa83915ae0fe5"
+    },
+    "Wallet_5": {
+        "mnemonic": "involve chest celery tonight escape great young thought option right city embrace",
+        "address": "0x3324bb7F0f6Adaa472e440B5f6692C08E8d960f6",
+        "private_key": "0x676ffd661acfd98b8500eeadc7e922999014b08836099d1550ec5a39cca902d8"
+    }
+}

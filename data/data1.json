@@ -1,0 +1,27 @@
+{
+    "Wallet_1": {
+        "mnemonic": "east police tooth private adult soap pulp essay awful mirror roof true",
+        "address": "0xC3DAda71C2BE3324f732cE9887110fFB20902661",
+        "private_key": "0x629f5924425d891e3448367ff7333ded06e858a4864dbcbb7fc883f7e8bad701"
+    },
+    "Wallet_2": {
+        "mnemonic": "remind cinnamon battle motion way crowd below toast hunt peace slush undo",
+        "address": "0xf953Db88819Fa3ebd1eB81545C1CD214708E7c38",
+        "private_key": "0x095db1a23945c2d7da7fa627d66e97472c55d8811242594632795e15d2ec2a32"
+    },
+    "Wallet_3": {
+        "mnemonic": "enough another farm mimic raccoon response figure various cotton salt nice city",
+        "address": "0x4a07Cf59ff79c54B6a286dd15C8c66F8AEF6F089",
+        "private_key": "0x8177aaf128e960862075884adec6470e3b671322c1f41724452d2e197bd71b2f"
+    },
+    "Wallet_4": {
+        "mnemonic": "special lamp throw bleak champion seat salon vague test boat voice grain",
+        "address": "0x5CEa6720e0Da3F0f3Dc806F4A56bFdd9AaFB9A1E",
+        "private_key": "0xff9022ecf0db44bbddfedf4ab5c9b3cd855604872d54e77eafb583f2bb23c2a5"
+    },
+    "Wallet_5": {
+        "mnemonic": "card duck dinosaur empty action collect material stove pulp vessel caught any",
+        "address": "0x3C295fB2C9616DDB9F53090443e2A921Fb42f73c",
+        "private_key": "0x944a13c3afe165b6519e0e52e646c5fb1ec36dca0ddcd5666236a2c6d1bdbe14"
+    }
+}

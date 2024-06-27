@@ -1,6 +1,7 @@
 import base_transactions
 import balance
 import time
+import random
 wallets = {
     "Wallet_1": {
         "mnemonic": "kit green loud wrap present brave pluck barely anger solar exercise yard",
@@ -51,23 +52,23 @@ def transfer_funds_sequally(wallets):
     # Example of sending transaction
     for n in range(2, 6): #send enough eth to cover fees 
         dependent_address = wallets[f'Wallet_{n}']['address']
-        amount_to_send =    150000000000000 #0.00015 ether
+        amount_to_send =    random.randint(109000000000000, 150000000000000) #0.5 usdt
         base_transactions.send_sign_transaction(cluster_address, dependent_address, amount_to_send, cluster_memo)
         print('Gas eth was sent to the wallet number - ', n )
-        time.sleep(5)
+        time.sleep(4)
     
     
     # Example loop for sending to dependent wallets
     for n in range(2, 6):
         dependent_address = wallets[f'Wallet_{n}']['address']
         dependent_memo = wallets[f'Wallet_{n}']['mnemonic']
-        amount_to_send =    5900000000000000 #0.0059 ether
+        amount_to_send =    random.randint(3000000000000000, 6000000000000000)  #10<x<20
         base_transactions.send_sign_transaction(cluster_address, dependent_address, amount_to_send, cluster_memo)
         print('Eth was sent to the wallet number - ', n )
-        time.sleep(5)
+        time.sleep(3)
         base_transactions.send_sign_transaction(dependent_address, cluster_address, amount_to_send, dependent_memo)
         print('Eth was sent back to the cluster address ')
-        time.sleep(5)
+        time.sleep(3)
 
         
         

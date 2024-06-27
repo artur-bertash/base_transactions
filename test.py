@@ -35,22 +35,43 @@ def transfer_funds_sequally(wallets):
     first_wallet = wallets[wallet_keys[0]]
     gas_limit = 21000  # Standard gas limit for a simple ETH transfer
     gas_price = 20 * 10**9  # 20 Gwei in wei
-    print(gas_price)
+    
     cluster_address = wallets['Wallet_1']['address']
     cluster_memo = wallets['Wallet_1']['mnemonic']
-    print('balance 0f the cluster acc - ', balance.check_balance('0xF250770c1f1fC303F56e34267460965EEb78E7cB'))
-    print(wallet_keys, gas_price) #wei
-    for n in range(2, 6): #sending eth to four dependent wallets
+    balance_cluster = balance.check_balance(cluster_address) 
+    
+    print('Balance of the cluster account:', balance_cluster)
+    print('Wallet keys:', wallet_keys)
+    print('Gas price:', gas_price)
+    
+    # Calculate the amount to send, ensuring it's a positive integer
+    
+    
+    
+    # Example of sending transaction
+    for n in range(2, 6): #send enough eth to cover fees 
+        dependent_address = wallets[f'Wallet_{n}']['address']
+        amount_to_send =    150000000000000 #0.00015 ether
+        base_transactions.send_sign_transaction(cluster_address, dependent_address, amount_to_send, cluster_memo)
+        print('Gas eth was sent to the wallet number - ', n )
+        time.sleep(5)
+    
+    
+    # Example loop for sending to dependent wallets
+    for n in range(2, 6):
         dependent_address = wallets[f'Wallet_{n}']['address']
         dependent_memo = wallets[f'Wallet_{n}']['mnemonic']
-        print(cluster_address, dependent_address, dependent_memo)
-        base_transactions.send_sign_transaction(cluster_address, dependent_address, 10000, cluster_memo) 
-        print(n)
+        amount_to_send =    5900000000000000 #0.0059 ether
+        base_transactions.send_sign_transaction(cluster_address, dependent_address, amount_to_send, cluster_memo)
+        print('Eth was sent to the wallet number - ', n )
         time.sleep(5)
+        base_transactions.send_sign_transaction(dependent_address, cluster_address, amount_to_send, dependent_memo)
+        print('Eth was sent back to the cluster address ')
+        time.sleep(5)
+
         
         
-
-
-print(transfer_funds_sequally(wallets))
-
-
+   
+    
+# Call the function
+transfer_funds_sequally(wallets)

@@ -1,27 +1,27 @@
 {
     "Wallet_1": {
-        "mnemonic": "west biology affair account era strike dilemma grid diesel embrace wasp enlist",
-        "address": "0x506b4C3EBfC8a4d2557A1F66cA43FC06fe0C1EE9",
-        "private_key": "0x72d87a97db3693187fbf91401b28e7fac64f148ee87aed57d1d4776595c4c405"
+        "mnemonic": "kick cake across market beef close dad snake armed arm insane panic",
+        "address": "0x9DCB8f88e94c40A4A075C61c7c754da4A5AAA2e4",
+        "private_key": "0xca1536d2f3df6855f8a5e14bf756271675d51781f24b93a0ddd0827c03ed0190"
     },
     "Wallet_2": {
-        "mnemonic": "zebra kind focus immune gate since kitten decide sell flush curious monkey",
-        "address": "0x7B0BF4Fa3D3610b1377FbcFCda3D16ECdb4524AF",
-        "private_key": "0xcd2e788de1c30c25f6c4bd2e0a188d190b771fe1b066a9dc307499f8b9f72878"
+        "mnemonic": "palm logic way warfare venue black nest kitchen pool hip expect height",
+        "address": "0x0B6D556bEb89c6B4c95D3F0c32302580eA8a22ec",
+        "private_key": "0x9970d7dac0dc4187553e7f8df92295320bd1243d59e1357fb6e06638b03d8cb9"
     },
     "Wallet_3": {
-        "mnemonic": "kite release ivory midnight story where rail shaft remove hawk south wife",
-        "address": "0x16b6aC1dcB7187F5D035bB8EDA48Be6228AC4C61",
-        "private_key": "0xa3c2f54c255037c4283ad08198c7209b68dd40666c8ca82d1a884b5daa3366be"
+        "mnemonic": "misery enact travel buzz total aim sunny knock dynamic lake enroll marriage",
+        "address": "0x46840933bCFD4B9d7Ae91900FCFEb9830561B22B",
+        "private_key": "0x87d9494ec2a336d8fb05dad8e710c7a67e82680cc045f7125ed5c47d5b804d5a"
     },
     "Wallet_4": {
-        "mnemonic": "short chalk powder jewel time abandon soccer body tortoise joy pool pelican",
-        "address": "0x84dC87eEC01FA9639805Ef7F966810D76304c6c9",
-        "private_key": "0xa66bf03ef84cd9efd4a26a9879f274306002097cf1544e9b530de4c18a0009f5"
+        "mnemonic": "sauce gym brass drip address online dune amazing stadium spring lobster suggest",
+        "address": "0x3708922E83dB81e1888F21688412dBA987960d8f",
+        "private_key": "0xa88e3968daa4c396bd6b8d131c5a3eb7085b629f6660d13faba8fc3ffacb3173"
     },
     "Wallet_5": {
-        "mnemonic": "wonder cash enough device twenty hint jewel tomato awake math kiwi critic",
-        "address": "0x9D670f949f68Fd780451d5486177b7D956249899",
-        "private_key": "0xcf0dfe53dbfe8522e081509b97755926302494dad7c901bb4501a038727d83df"
+        "mnemonic": "narrow immense elegant sniff option fade dust basic online bus replace sport",
+        "address": "0x2512F99583b12F4485626C9E74412B5910094dEf",
+        "private_key": "0x4d8a1098c1a28b7a60b0704f78369cd53fbbe3c21d3cbbeeed66267fb8848819"
     }
 }

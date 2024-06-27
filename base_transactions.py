@@ -39,7 +39,7 @@ def build_txn(
         'chainId': web3.eth.chain_id,
         'from': from_address,
         'to': to_address,
-        'value': int(web3.to_wei(amount, 'ether')),
+        'value': amount,
         'nonce': nonce, 
         'gasPrice': gas_price,
         'gas': gas,

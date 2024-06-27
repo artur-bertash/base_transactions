@@ -7,8 +7,26 @@ import balance
 import current_price
 import time
 import base_transactions
-
+import random 
 print(base_transactions.ab)
+from web3 import Web3
+import configseed
+
+# Initialize Web3
+web3 = Web3(Web3.HTTPProvider(endpoint_uri=configseed.base_rpc))
+
+def check_balance(address):
+    # Convert the address to a checksum address
+    checksum_address = web3.to_checksum_address(address)
+    
+    # Get the balance in Wei
+    balance_wei = web3.eth.get_balance(checksum_address)
+    
+    # Convert the balance to Ether
+    balance_ether = web3.from_wei(balance_wei, 'ether')
+    
+    return float(balance_ether)
+
 def create_next_cluster(data):
     directory = 'data'
     
@@ -33,12 +51,14 @@ create_next_cluster(data)
 cluster_address = data["Wallet_1"]["address"]
 cluster_memo = data["Wallet_1"]["mnemonic"]
 cluster_key = data["Wallet_1"]["private_key"]
+print('cluster address - ', cluster_address)
 print('Please send some eth to the following address - ', cluster_address)
 ser_input = input("Please enter 'Y' if you sent it or 'N' if you didn't: ").strip().lower()
 
-balance = balance.check_balance(cluster_address)
+balance = check_balance(cluster_address)
+print('balance is - ', balance)
 #print(f"balance of {wallet_address}={balance} Wei")
-if (balance*int(current_price.get_ethereum_price())) < 1:
+""" if (balance*int(current_price.get_ethereum_price())) < 1:
     print('The transaction wasnt completed.')
     while True:
         print('The app will automatically check whether you have eth in 15 seconds')
@@ -47,15 +67,7 @@ if (balance*int(current_price.get_ethereum_price())) < 1:
             break
     print('Congrats. You have enough ETH to cover the gas fees.')
 print('The amount of ETH on the cluster address- ', balance)
+ """
 
-
-#send some eth to the dependent addresses
-for i in range(2, len(data)+1):
-    for _ in range(5):
-        dependent_address = data[f"Wallet_{i}"]['address']
-        print('sending some eth to - ', dependent_address)
-        base_transactions.send_sign_transaction(cluster_address, dependent_address, 0.00000000000001, cluster_memo)
-        time.sleep(5)
-
-
-
+def transfer_funds_sequally(wallets):
+    

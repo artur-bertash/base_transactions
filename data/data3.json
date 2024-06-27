@@ -1,0 +1,27 @@
+{
+    "Wallet_1": {
+        "mnemonic": "journey patient broken output winner accident toy veteran body above pause spring",
+        "address": "0x54C5c7EFF0F39b26BB2Cf888cFDB26625a829f9d",
+        "private_key": "0x377122f52ae6222f3c257be968e70c705471efd2309a0544a66fc5f2ee734d4e"
+    },
+    "Wallet_2": {
+        "mnemonic": "chaos point spin lonely can hundred toe comic carpet weather neck stuff",
+        "address": "0x89A2D284D19F52B049997ff02157d0906f7E4b92",
+        "private_key": "0x0f053897e40ea22eeacc66b76ae6e328faafe1ca7034c753ec00b05bef75f439"
+    },
+    "Wallet_3": {
+        "mnemonic": "motor scare upper any lamp patch forget demand extend receive aim promote",
+        "address": "0xC2f9802Ea15d7a99FB56e41FF7e9C6e5174141e1",
+        "private_key": "0x789b453acc4db9adf9cf8efa8c088b439914d7a6fda47b940dd2de76ec4caaaa"
+    },
+    "Wallet_4": {
+        "mnemonic": "tumble chest sweet squeeze mimic mutual bunker actor palm planet absorb budget",
+        "address": "0x251189A1284db436E80aAf5F8fCD5cF50F4c5516",
+        "private_key": "0x2722b3ee6ac96d3becfef3220f1c5f4e6f8a08acac72295c7d610ff9b645f0c4"
+    },
+    "Wallet_5": {
+        "mnemonic": "coil police mad fine install peanut word coil cluster crucial winter butter",
+        "address": "0x4eaa38e11E6FC0439a626dc547b847fe5394201f",
+        "private_key": "0x9f255de9964494df397aa26e168a785ae52ad4438ac0c5bc565ca80ba476fb9c"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "Wallet_1": {
+        "mnemonic": "junior caught hospital minute disagree industry dolphin input unaware potato cotton vague",
+        "address": "0xfd8Aa1998dd50aB743a4B7d17eC4B1888e53C76d",
+        "private_key": "0x5fcee394ed8763673d4342e89a8f008d5a76d6e68526f1eec19a0bc7cdd49ca0"
+    },
+    "Wallet_2": {
+        "mnemonic": "rule trust pear world jealous survey priority fee valid hub gossip tribe",
+        "address": "0x992BDdf35bd62C349B06c795CF0365a06682B62D",
+        "private_key": "0xc4ec37a2e828d67d202b0f23baa90da4ee3a9bc3f09dfd7f31386dbed2d3c2cd"
+    },
+    "Wallet_3": {
+        "mnemonic": "trophy pulp squeeze poem prevent method pipe clarify fancy ready apart alcohol",
+        "address": "0xBb19A1D7034b4B1d7BE80e70afDEEEDFbA6366F6",
+        "private_key": "0xedbf889ed7ef4603bc2697ddb0c97303974c596a79e7f68d23fb82c61adc24c2"
+    },
+    "Wallet_4": {
+        "mnemonic": "civil forget blur correct image faint final project surface vivid dirt book",
+        "address": "0x0A6F9B6C6Cf9Dd764c383F6779f6a6e34c56b59c",
+        "private_key": "0x77bed152e9a32bb2245d87fbee21517acdb58cc7f9801aa8ac4315487e452b36"
+    },
+    "Wallet_5": {
+        "mnemonic": "slam disease common distance ring mistake mouse unveil wide act notable cute",
+        "address": "0x205c68485a90a10b6aB3961C2F68F05541B1F442",
+        "private_key": "0x8b551e0164b676110f1d5fd609298be00c40e0e85e803a86633ec1eeca7d4685"
+    }
+}

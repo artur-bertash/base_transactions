@@ -52,7 +52,7 @@ def transfer_funds_sequally(wallets):
     # Example of sending transaction
     for n in range(2, 6): #send enough eth to cover fees 
         dependent_address = wallets[f'Wallet_{n}']['address']
-        amount_to_send =    random.randint(109000000000000, 150000000000000) #0.5 usdt
+        amount_to_send =    random.randint(259000000000000, 350000000000000) #0.5 usdt
         base_transactions.send_sign_transaction(cluster_address, dependent_address, amount_to_send, cluster_memo)
         print('Gas eth was sent to the wallet number - ', n )
         time.sleep(4)
@@ -62,13 +62,21 @@ def transfer_funds_sequally(wallets):
     for n in range(2, 6):
         dependent_address = wallets[f'Wallet_{n}']['address']
         dependent_memo = wallets[f'Wallet_{n}']['mnemonic']
-        amount_to_send =    random.randint(3000000000000000, 6000000000000000)  #10<x<20
-        base_transactions.send_sign_transaction(cluster_address, dependent_address, amount_to_send, cluster_memo)
-        print('Eth was sent to the wallet number - ', n )
-        time.sleep(3)
-        base_transactions.send_sign_transaction(dependent_address, cluster_address, amount_to_send, dependent_memo)
-        print('Eth was sent back to the cluster address ')
-        time.sleep(3)
+        how_many_times_transfer = random.randint(105, 130)
+        counter = 0
+        amount_to_send = random.randint(3000000000000000, 6000000000000000) #10<x<20
+        print('amount of eth to be flipped - ', amount_to_send)
+        for _ in range(how_many_times_transfer):
+              
+            base_transactions.send_sign_transaction(cluster_address, dependent_address, amount_to_send, cluster_memo)
+            print('Eth was sent to the wallet number - ', n )
+            time.sleep(10)
+            base_transactions.send_sign_transaction(dependent_address, cluster_address, amount_to_send, dependent_memo)
+            print('Eth was sent back to the cluster address ')
+            counter += 1
+            print('THe num of the transaction is - ', counter)
+
+            time.sleep(10)  
 
         
         
